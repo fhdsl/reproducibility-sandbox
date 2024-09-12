@@ -1,4 +1,5 @@
 # Candace Savonen Oct 2021
+# Updates Sept 2024
 
 name: Render R Example
 
@@ -19,12 +20,10 @@ jobs:
     steps:
       # We need to tell github actions to use the code on the branch we are on
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           # How deep should it fetch?
           fetch-depth: 0
-          # Need to provide permissions for it to do so
-          token: ${{ secrets.GH_PAT }}
 
       # Run R analysis
       - name: Run R analysis example
