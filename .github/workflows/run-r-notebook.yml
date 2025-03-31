@@ -11,6 +11,8 @@ on:
   # This is set to run when any pull request is opened to main
   pull_request:
     branches: [ main ]
+  merge:
+    branches: [ main ]
 
 jobs:
   render-notebooks:
