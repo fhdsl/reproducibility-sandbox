@@ -11,7 +11,8 @@ on:
   # This is set to run when any pull request is opened to main
   pull_request:
     branches: [ main ]
-  merge:
+  # This is set to run when anything is committed to main
+  push:
     branches: [ main ]
 
 jobs:
